@@ -1,0 +1,25 @@
+Package: scHiCBayes
+Type: Package
+Title: Single cell HiC data imputation using Bayesian hierarchy model.
+Version: 1.0
+Date: 2021-07-28
+Author: Qing Xie (The Ohio State University, USA), Shili Lin (The Ohio State University, USA)
+Maintainer: Qing Xie <xie.735@osu.edu>
+Description: scHiCBayes carries out single cell HiC matrix imputation that takes neighborhood, similar cells, and bulk data into account.
+Depends: R (>= 3.5.0),
+License: GPL
+Imports: 
+    Rcpp,
+    parallel,
+    RcppArmadillo,
+    Rtsne,
+    ggpubr,
+    mclust,
+    ggplot2
+LinkingTo: Rcpp, 
+           RcppArmadillo
+RoxygenNote: 7.1.1
+Suggests: 
+    knitr, 
+    rmarkdown
+VignetteBuilder: knitr
